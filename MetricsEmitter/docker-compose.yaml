@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+ metrics-emitter:
+  image: rmpaul/metrics-emitter
+  ports:
+    - "7777:7777"
+  build:
+    context: . 
+    dockerfile: Dockerfile

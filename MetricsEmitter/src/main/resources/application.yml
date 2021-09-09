@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: metrics-emitter
+
+server:
+  port: 7777
+
+  
