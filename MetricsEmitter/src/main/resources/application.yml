@@ -5,4 +5,15 @@ spring:
 server:
   port: 7777
 
-  
+management:
+  metrics:
+    enable:
+      jvm: true
+  endpoint:
+    metrics:
+      enabled: true
+    health:
+      enabled: true
+      probes:
+        enabled: true
+      show-details: always
