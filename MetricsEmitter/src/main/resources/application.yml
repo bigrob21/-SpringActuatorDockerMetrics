@@ -5,4 +5,17 @@ spring:
 server:
   port: 7777
 
-  
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - info
+        - metrics
+    jmx:
+      domain: 
+      exposure:
+        include:
+        - '*'
